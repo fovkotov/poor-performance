@@ -1,0 +1,505 @@
+.W_NavigationTop {
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 320px;
+  display: flex;
+  position: fixed;
+  top: 12px;
+  right: 18px;
+  z-index: 3;
+  gap: 12px;
+}
+
+.W_NavigationBottom {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  max-width: 226px;
+  text-decoration: none;
+  display: flex;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  z-index: 3;
+  mix-blend-mode: difference;
+}
+
+.W_InfoLineEnd {
+  grid-column-gap: 12px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  ); /* Авто-колонки */
+
+  grid-column: span 12;
+}
+
+.W_InfoLineHor {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  align-items: center;
+  width: calc(100% - 24px);
+  margin-left: 12px;
+}
+
+.W_End {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.W_InfoWrap {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: calc(100vh - 24px);
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  position: relative;
+}
+
+.W_Form {
+  grid-row-gap: 37px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_HeadingHero {
+  grid-column-gap: 67px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_Profile {
+  grid-row-gap: 122px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_Hero {
+  grid-column-gap: 48px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_ColabCardWorksopText {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 226px;
+  height: 464px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_ColabCardWorkshopTextStartYou {
+  grid-row-gap: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 425px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_WorkshopTextStartYou {
+  grid-column-gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-left: 60px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_ColabCardWorkShopTextYou {
+  background-image: linear-gradient(#000 0%, #0000 100%);
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 940px;
+  height: 297px;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_ColabcardWorksopTextInfo {
+  grid-row-gap: 12px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 226px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_WorksopTextInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.W_BentoStart {
+  grid-row-gap: 12px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_TopWorks {
+  grid-row-gap: 64px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_ProfileHeading {
+  grid-row-gap: 48px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 430px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_IventCardText {
+  grid-column-gap: 12px;
+  grid-row-gap: 32px;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 40px 12px 144px;
+  text-decoration: none;
+  display: flex;
+  color: var(--type-white);
+  flex-direction: column;
+  height: calc(100vh + 52px);
+  margin-bottom: -234px;
+}
+
+.W_MainText {
+  grid-column-gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-left: 60px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_ItemCardBottomText {
+  grid-row-gap: 48px;
+  border-radius: 405px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 374px;
+  text-decoration: none;
+  display: flex;
+  z-index: 2;
+}
+
+.W_Eyes {
+  grid-column-gap: 10px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_Circles {
+  grid-column-gap: 12px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 88px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_IventCardTextTop {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-flow: row;
+  display: flex;
+}
+
+.W_MediumLearningCardInfo {
+  grid-column: span 8;
+  display: grid;
+
+  grid-template-rows: 1fr auto; /* Верхний элемент, пустое место, нижний элемент */
+  grid-template-columns: repeat(8, 1fr);
+  height: 100%;
+}
+
+.W_MediumLearningCardInfoHeading {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  grid-column: span 8;
+}
+
+.W_SmallLearningCardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: span 4;
+}
+
+.W_SmallLearningCardInfoHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.W_MediumLearningCardInfoParagraph {
+  display: grid;
+  gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  position: relative;
+  grid-column: span 6;
+}
+
+.W_SmallLearningCardRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 128px;
+  height: auto;
+}
+
+.W_SmallLearningCardInfoParagraph {
+  position: relative;
+  display: block;
+  grid-column: 4;
+}
+
+.W_ColabCardWorksopText {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 226px;
+  height: 226px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.W_CardHeading {
+  grid-row-gap: 12px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_PersonInfo {
+  grid-row-gap: 2px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+
+  .A_LabelSmall {
+    color: black;
+  }
+
+  .A_LabelSmall:nth-child(2) {
+    color: var(--type-secondary);
+  }
+}
+
+.W_NavigationTopMobile {
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
+  background-image: linear-gradient(90deg, #e2e2e300, #e2e2e3);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 375px;
+  height: 812px;
+  text-decoration: none;
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.W_MenuList {
+  grid-row-gap: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 220px;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-decoration: none;
+  display: flex;
+}
+
+.LinkSocial {
+  grid-row-gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_ArticleHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.W_ArticleListItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.W_StickyWrap {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  align-items: flex-start;
+
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 12px;
+}
+
+.W_ArticleArtifacts {
+  top: 360px;
+  grid-row-gap: 48px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+  position: sticky;
+  align-self: flex-start;
+
+  grid-column: 21 / 25;
+}
+
+.W_ArticleRecsCardArticleWrap {
+  display: none;
+  flex-direction: column;
+}
+
+.W_ArticleArtifacts.Mobile {
+  display: none;
+}
+
+.W_MenuNav {
+  display: flex;
+  flex-direction: column;
+}
+.W_IventCardBottomTextDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+  align-self: stretch;
+  color: var(--type-white);
+  width: 230px;
+}
+
+.W_IventCardBottomContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  overflow-x: auto;
+  width: 100%;
+  z-index: 2;
+}
+
+.W_IventCardBottomBody {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.W_ContentImg {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.W_Content {
+  display: flex;
+  padding-right: 64px;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.W_CaseParagraph {
+  display: flex;
+  width: 226px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--type-white);
+}

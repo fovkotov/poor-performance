@@ -1,0 +1,229 @@
+.C_TimeInfo {
+  gap: 14px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 0px;
+  text-decoration: none;
+  display: flex;
+  color: var(--type-white);
+}
+
+.C_Navigation {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.C_IventCardsGrid {
+  display: flex;
+  flex-direction: column;
+}
+
+.C_CircleList {
+  grid-column-gap: 12px;
+  object-fit: cover;
+  flex-flow: row;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.C_Profiles {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 230px;
+}
+
+.C_Links {
+  grid-row-gap: 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 125px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-decoration: none;
+  display: flex;
+  margin-left: 12px;
+}
+
+.C_Bento {
+  grid-column-gap: 12px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.C_WadeWithUsGrid {
+  grid-row-gap: 12px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 940px;
+  text-decoration: none;
+  display: flex;
+}
+
+.C_DotsTop {
+  display: flex;
+  width: calc(100vw - 24px);
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.C_DotsBottom {
+  display: flex;
+  width: calc(100vw - 24px);
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.C_DotsCenter {
+  display: flex;
+  width: calc(100vw - 24px);
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  bottom: auto;
+  left: 0px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.C_Tab {
+  grid-column-gap: 88px;
+  mix-blend-mode: difference;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2px 32px;
+  text-decoration: none;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.C_Hero {
+  grid-column-gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.C_Social {
+  height: calc(100% - 24px);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  gap: 8px;
+}
+
+.C_ColabCardArticleCovers {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 464px;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.C_ColabCardArticleCover {
+  border: 1.5px solid #fff6;
+  max-width: 226px;
+  object-fit: cover;
+}
+
+.C_BentPoics {
+  grid-column-gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.C_SmallLearningCardGrid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-column: span 8;
+  grid-auto-columns: 1fr;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.C_Recomendations {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  width: calc(100% - 24px);
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.C_NavigationMobile {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  padding-right: 12px;
+}
+
+.C_SocialIconsMobile {
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  display: flex;
+}
+
+.C_ArticleList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .A_ParagraphBody {
+    line-height: 100%;
+  }
+}
