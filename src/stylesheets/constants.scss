@@ -148,3 +148,15 @@
 body.article {
   position: relative;
 }
+
+body.tusovochka {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 12px;
+  overflow-x: hidden;
+
+  .O_Footer {
+    grid-column: 1 / 25;
+  }
+}

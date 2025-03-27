@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlWebpackPartialsPlugin = require("html-webpack-partials-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+// const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 const webpack = require("webpack");
 const path = require("path");
@@ -95,7 +95,6 @@ module.exports = {
       scriptLoading: "blocking",
       template: "./src/tusovochka.html",
       filename: "./tusovochka.html",
-      chunks: ["index"],
     }),
 
     new HtmlWebpackPlugin({
@@ -110,7 +109,6 @@ module.exports = {
       scriptLoading: "blocking",
       template: "./src/ivents.html",
       filename: "./ivents.html",
-      chunks: ["index"],
     }),
 
     new HtmlWebpackPlugin({
@@ -161,6 +159,7 @@ module.exports = {
     //     priority: "replace",
     //   },
     // ]),
+
     // new HtmlWebpackPartialsPlugin([
     //   {
     //     path: path.join(__dirname, "./src/partials/header-menu.html"),
@@ -172,7 +171,7 @@ module.exports = {
   ],
   optimization: {
     // Минификация CSS - раскомментируйте, если хотите использовать
-    // minimizer: [new CssMinimizerPlugin()],
+    // minimizer: [new CssMinimizerPlugin()]
   },
   devtool: "source-map", // для отладки CSS и JS
   resolve: {

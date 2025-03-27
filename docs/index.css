@@ -175,6 +175,16 @@ body {
   height: 405px;
 }
 
+.horisontal {
+  aspect-ratio: 16 / 9;
+  height: 405px;
+}
+
+.circle {
+  border-radius: 1000px;
+  height: 405px;
+}
+
 .BackBlur {
   position: absolute;
   left: -12px;
@@ -458,6 +468,18 @@ body.article {
   position: relative;
 }
 
+body.tusovochka {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 12px;
+  overflow-x: hidden;
+
+  .O_Footer {
+    grid-column: 1 / 25;
+  }
+}
+
 h1 {
   font-family: 'PP Neue Montreal SemiBold';
   font-size: var(--h1-font-size);
@@ -640,6 +662,9 @@ p.A_Capture {
   text-underline-position: from-font;
   text-transform: lowercase;
   cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .Q_Icon_24 {
@@ -721,10 +746,12 @@ p.A_Capture {
 }
 
 .Q_SqrDot {
-  background-color: black;
+  background-color: var(--shape-white);
+  mix-blend-mode: exclusion;
   width: 3px;
   aspect-ratio: 1 / 1;
   position: absolute;
+  z-index: 999;
 
   &:nth-child(1) {
     left: 0;
@@ -743,6 +770,18 @@ p.A_Capture {
     right: 0;
     top: 0;
   }
+
+  &.Middle.Top {
+    left: 50%;
+    translate: -50%;
+    top: 0;
+  }
+
+  &.Middle.Bottom {
+    left: 50%;
+    translate: -50%;
+    bottom: 0;
+  }
 }
 
 .Q_LogoSvg {
@@ -755,6 +794,15 @@ p.A_Capture {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.Q_ColabCardInterviewGradient {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 87px;
+  background: linear-gradient(0deg, #f7f8fa 0%, rgba(247, 248, 250, 0) 100%);
+  z-index: 2;
 }
 
 :root {
@@ -908,6 +956,18 @@ body.article {
   position: relative;
 }
 
+body.tusovochka {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 12px;
+  overflow-x: hidden;
+
+  .O_Footer {
+    grid-column: 1 / 25;
+  }
+}
+
 .A_3dCard {
   object-fit: contain;
   padding: 22px 50px;
@@ -951,9 +1011,72 @@ h3 {
   overflow: auto;
 }
 
+.A_CardInterviewCover {
+  width: 100%;
+  max-width: 464px;
+  height: 100%;
+  object-fit: cover;
+
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.A_BentoCardHorisontal {
+  width: 100%;
+  object-fit: cover;
+}
+
 .A_Profile {
+  display: flex;
   aspect-ratio: 1;
   width: 100%;
+  padding: 6px 0px;
+  cursor: pointer;
+
+  &:first-child {
+    margin-top: 24px;
+  }
+
+  &:last-child {
+    margin-bottom: 424px;
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 345px;
+
+  &:hover {
+    box-shadow: 0px 0px 32.2px 0px #b2ff00 inset,
+      0px 0px 32.2px 0px #b2ff00 inset;
+  }
+
+  &:nth-child(1) {
+    background-image: url(images/b44527c0e712b45bd849.png);
+  }
+  &:nth-child(2) {
+    background-image: url(images/9f5575a9736c29b1a070.png);
+  }
+  &:nth-child(3) {
+    background-image: url(images/2d8931d39ff927aa3bdc.png);
+  }
+  &:nth-child(4) {
+    background-image: url(images/94fc4a488eebd067f209.png);
+  }
+  &:nth-child(5) {
+    background-image: url(images/f65a87de768b83daaeec.png);
+  }
+  &:nth-child(6) {
+    background-image: url(images/a2bb3e7c529f9b4e7bd8.png);
+  }
+  &:nth-child(7) {
+    background-image: url(images/d02707af0dc26587fa2a.png);
+  }
+
+  &.active {
+    box-shadow: 0px 0px 32.2px 0px #b2ff00 inset,
+      0px 0px 32.2px 0px #b2ff00 inset;
+  }
 }
 
 .A_MenuItem {
@@ -982,6 +1105,14 @@ h3 {
 
   &:focus {
     background-color: var(--surface-brand-primary);
+  }
+
+  &.Active {
+    background-color: var(--green);
+  }
+
+  p {
+    color: black;
   }
 }
 
@@ -1299,7 +1430,7 @@ h3 {
   translate: -20px;
   width: calc(100vw);
   background-color: #e2e3e4;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 38px;
@@ -1342,6 +1473,15 @@ h3 {
   text-align: center;
 }
 
+.A_Backgrad {
+  background: linear-gradient(180deg, rgba(112, 113, 114, 0) 0%, #707172 100%);
+  width: 200vw;
+  position: absolute;
+  z-index: 1;
+  height: 120px;
+  top: -56px;
+}
+
 .M_TimeAndTime {
   grid-row-gap: 6px;
   flex-direction: column;
@@ -1365,11 +1505,22 @@ h3 {
   color: var(--type-white);
 }
 
+.M_ItemCardBottomHeadingEvents {
+  grid-column-gap: 8px;
+  flex: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+  color: var(--type-white);
+}
+
 .M_WorkCard {
+  grid-column: span 2;
   grid-row-gap: 10px;
   background-color: #d9d9d9;
   background-image: linear-gradient(#0000 0%, #000 100%),
-    url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b964a9251a18b7367e_M_WorkCard.png");
+    url(images/ab23ecba0e3700f29c81.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1383,6 +1534,43 @@ h3 {
   text-decoration: none;
   display: flex;
   position: relative;
+
+  &.Ts2 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url(images/66538b3f20438ac51c5c.png);
+  }
+
+  &.Ts3 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url(images/4c5055523c3d3e75c752.png);
+  }
+
+  &.Ts4 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url(images/0b6c7b6468caddb783d9.png);
+  }
+
+  &.Ts5 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url(images/66eeb5864b0f046a8339.png);
+  }
+
+  &.Ts6 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url(images/4ae1849f628120f5825c.png);
+  }
+
+  &.Ts7 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url(images/d6980c4ab5965c054e37.png);
+  }
+
+  p {
+    font-size: 28px;
+    a:visited {
+      color: inherit;
+    }
+  }
 }
 
 .M_HeroItemCrads {
@@ -1435,7 +1623,7 @@ h3 {
   text-decoration: none;
   display: flex;
   overflow: hidden;
-  background-color: var(--surface-black_6);
+  z-index: 1;
 }
 
 .M_ParagraphHeader {
@@ -1605,12 +1793,28 @@ h3 {
 }
 
 .W_Hero {
+  position: relative;
+  width: 100%;
   grid-column-gap: 48px;
   flex: 0 auto;
   justify-content: flex-start;
   align-items: flex-start;
   text-decoration: none;
-  display: flex;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 12px;
+
+  h1 {
+    width: 100%;
+  }
+
+  .C_Links {
+    grid-column-start: 6;
+    grid-column-end: 8;
+
+    margin-left: 0px;
+  }
 }
 
 .W_ColabCardWorksopText {
@@ -1674,16 +1878,22 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .W_BentoStart {
-  grid-row-gap: 12px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: span 2;
+  height: 100%;
 }
 
 .W_TopWorks {
@@ -1705,11 +1915,19 @@ h3 {
   max-width: 430px;
   text-decoration: none;
   display: flex;
+
+  grid-column-start: 1;
+  grid-column-end: 6;
+
+  h1 {
+    font-size: 5vw;
+  }
 }
 
 .W_IventCardText {
   grid-column-gap: 12px;
   grid-row-gap: 32px;
+  background-image: linear-gradient(0deg, #0000, #000);
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1718,9 +1936,6 @@ h3 {
   text-decoration: none;
   display: flex;
   color: var(--type-white);
-  flex-direction: column;
-  height: calc(100vh + 52px);
-  margin-bottom: -234px;
 }
 
 .W_MainText {
@@ -1743,7 +1958,6 @@ h3 {
   max-width: 374px;
   text-decoration: none;
   display: flex;
-  z-index: 2;
 }
 
 .W_Eyes {
@@ -1829,10 +2043,7 @@ h3 {
 .W_ColabCardWorksopText {
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
   max-width: 226px;
-  height: 226px;
   text-decoration: none;
   display: flex;
   position: relative;
@@ -1960,6 +2171,7 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+
 .W_IventCardBottomTextDetails {
   display: flex;
   flex-direction: column;
@@ -1970,6 +2182,46 @@ h3 {
   width: 230px;
 }
 
+.W_DotsWrap {
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+  position: fixed;
+  z-index: 99999;
+  top: 12px;
+  left: 12px;
+  height: calc(100% - 24px);
+  width: calc(100% - 24px);
+
+  .Q_SqrDot {
+    width: 6px;
+  }
+}
+
+.W_MobileFooterWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  p {
+    font-size: 14px;
+    color: black;
+  }
+
+  &:nth-child(1) {
+    order: 3;
+  }
+}
+
+.W_MobileFooterSocial {
+  order: 2;
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  gap: 8px;
+  z-index: 9999;
+  padding: 0px 20px;
+}
+
 .W_IventCardBottomContent {
   display: flex;
   align-items: flex-start;
@@ -1977,6 +2229,7 @@ h3 {
   overflow-x: auto;
   width: 100%;
   z-index: 2;
+  padding: 12px;
 }
 
 .W_IventCardBottomBody {
@@ -2038,17 +2291,48 @@ h3 {
   flex: 0 auto;
   justify-content: flex-start;
   align-items: center;
+  padding-bottom: 44px;
   text-decoration: none;
   display: flex;
 }
 
 .C_Profiles {
+  grid-column-gap: 10px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 23.958vw;
+  text-decoration: none;
   display: flex;
-  align-items: center;
-  align-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 12px;
+}
+
+.C_ProfilesEvents {
+  grid-column-gap: 10px;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 230px;
+  text-decoration: none;
+  display: flex;
+  top: 0;
+  left: 12px;
+}
+
+.C_WrapTest {
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
 }
 
 .C_Links {
@@ -2065,12 +2349,27 @@ h3 {
 }
 
 .C_Bento {
-  grid-column-gap: 12px;
-  flex: 0 auto;
-  justify-content: flex-start;
-  align-items: center;
-  text-decoration: none;
-  display: flex;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.C_BentoPics {
+  display: grid;
+  gap: 12px;
+  grid-column: span 2;
+  grid-template-columns: repeat(2, 1fr);
+  img {
+    grid-column: span 1;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.W_ColabCardWorksopText {
+  .C_WadeWithUsGrid {
+    grid-row-gap: 12px;
+  }
 }
 
 .C_WadeWithUsGrid {
@@ -2245,7 +2544,7 @@ h3 {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin-bottom: -64px;
   text-decoration: none;
   display: flex;
@@ -2327,16 +2626,14 @@ h3 {
   text-decoration: none;
   display: flex;
   position: relative;
-}
 
-.A_CardInterviewCover {
-  background-color: #191a1e;
-  background-image: none;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 464px;
-  min-height: 464px;
+  &:hover {
+    cursor: pointer;
+
+    .Q_ColabCardInterviewGradient {
+      background: linear-gradient(0deg, #b2ff00 0%, rgba(178, 255, 0, 0) 100%);
+    }
+  }
 }
 
 .O_TextParagraph {
@@ -2372,6 +2669,10 @@ h3 {
   display: none;
 }
 
+.O_FooterMobile {
+  display: none;
+}
+
 .S_IventCard {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -2385,19 +2686,23 @@ h3 {
   display: flex;
   overflow: hidden;
   box-shadow: 0 32px 60px #b2ff00;
-  margin-bottom: -52px;
 }
 
 .S_TusovochkaContent {
+  margin-right: 12px;
+  margin-top: 24px;
+  grid-column-start: 9;
+  grid-column-end: 25;
   grid-column-gap: 5%;
   grid-row-gap: 5%;
   flex-flow: row;
   justify-content: space-between;
-  width: calc(100vw - 24px);
-  padding: 24px 12px;
+  max-width: 940px;
+  min-width: 50px;
   text-decoration: none;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .S_IndexContent {
@@ -2496,6 +2801,26 @@ h3 {
     background-image: url(images/2c88a524f7f2c2415860.png);
     max-width: none;
   }
+
+  .C_Profiles {
+    width: 345px;
+  }
+
+  .S_TusovochkaContent {
+    grid-column-start: 8;
+  }
+
+  .W_ProfileHeading {
+    h1 {
+      font-size: 72px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 860px) {
+  .W_InfoLineHor {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2506,8 +2831,187 @@ h3 {
     --p-A_LabelSmall-font-size: var(--p-font-size);
   }
 
+  body.tusovochka {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .C_Bento {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .C_BentoPics {
+    width: 100%;
+  }
+
+  .O_ColabCardInterview {
+    flex-direction: column;
+  }
+
+  #MobileHidden {
+    display: none;
+  }
+
+  .S_TusovochkaContent {
+    width: 100%;
+    max-width: none;
+    margin-top: 8px;
+    grid-column-start: 1;
+    grid-column-end: 25;
+    margin-right: 0;
+  }
+
+  .A_ArticleRecsCardArticleLinkBtn {
+    display: flex;
+  }
+  .C_Links {
+    display: none;
+  }
+
+  .C_Hero {
+    flex-direction: column;
+    height: auto;
+
+    .A_ArticleRecsCardArticleLinkBtn {
+      width: 100vw;
+      translate: 0px;
+      background-color: var(--green);
+    }
+  }
+
+  .C_Profiles {
+    width: 100%;
+    position: relative;
+    left: auto;
+    overflow-x: auto;
+  }
+
+  .C_WrapTest {
+    flex-direction: row;
+    height: 16vw;
+    min-height: 60px;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .W_Profile {
+    grid-row-gap: 48px;
+  }
+
+  .W_Hero {
+    .W_ProfileHeading {
+      grid-row-gap: 20px;
+
+      padding-left: 20px;
+      width: 100%;
+      max-width: none;
+
+      grid-column-start: 1;
+      grid-column-end: 10;
+
+      h1 {
+        font-size: 36px;
+        letter-spacing: -0.4px;
+      }
+    }
+  }
+
+  .W_TopWorks {
+    h2 {
+      font-size: 28px;
+      padding-left: 20px;
+      letter-spacing: -0.2px;
+    }
+    grid-row-gap: 24px;
+  }
+
+  .A_Profile {
+    height: 60px;
+    padding: 0;
+    width: 60px;
+    &:first-child {
+      margin-top: 0;
+      margin-left: 26px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-right: 26px;
+    }
+  }
+
+  .Q_MainVideo01 {
+    top: 97px;
+    object-fit: cover;
+    width: 274px;
+    height: 190px;
+    right: 0;
+  }
+
+  .W_HeadingHero {
+    display: none;
+  }
+
+  .W_DotsWrap {
+    display: none;
+  }
+
+  .M_HeroItem {
+    flex-direction: column-reverse;
+    padding: 24px 20px;
+  }
+
+  .M_HeroItemCrads {
+    .A_LabelMedium {
+      opacity: 0;
+    }
+    .S_IndexContent {
+      grid-row-gap: 12px;
+      h2 {
+        font-size: 28px;
+      }
+      h3 {
+        font-size: 12px;
+        font-weight: 100;
+      }
+
+      opacity: 1;
+    }
+
+    height: 356px;
+
+    &:hover {
+      .A_LabelMedium {
+        opacity: 0;
+      }
+    }
+  }
+
+  .M_HeroItemCrads:first-child .M_HeroItem .S_IndexContent h3 br {
+    display: none;
+  }
+
+  .C_Social {
+    display: none;
+  }
+
   p.Title {
     font-size: 14px;
+  }
+
+  .W_ArticleHeading {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .W_ArticleListItem {
+    p {
+      font-size: 14px;
+    }
   }
 
   .W_IventCardBottomContent {
@@ -2537,12 +3041,6 @@ h3 {
     padding-bottom: 32px;
   }
 
-  .W_ArticleHeading {
-    justify-content: flex-start;
-    width: 100%;
-    gap: 12px;
-  }
-
   .O_ItemCardBottom {
     width: calc(100% - 16px);
   }
@@ -2566,12 +3064,6 @@ h3 {
 
   .O_TextParagraph {
     grid-row-gap: 16px;
-  }
-
-  .W_ArticleListItem {
-    p {
-      font-size: 14px;
-    }
   }
 
   .A_ArticleCoverVideo {
@@ -2784,12 +3276,57 @@ h3 {
     z-index: 999;
   }
 
+  .O_FooterMobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 128px;
+    padding-bottom: 96px;
+    gap: 12px;
+    background: linear-gradient(
+      0deg,
+      var(--Serface---surface-brand-primary, #b2ff00) 0%,
+      rgba(247, 248, 250, 0) 100%
+    );
+  }
+
+  .W_Form {
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    z-index: 999;
+  }
+
   .A_MenuButtonMobile.White {
     background-image: url(images/1d8bd8a2ffef7be37c9f.svg);
   }
 
   .W_MenuList {
     max-width: 220px;
+  }
+
+  .A_TelegarmText {
+    p.A_LabelSmall {
+      font-size: 14px;
+    }
+    p.A_LabelSmall:first-child {
+      color: black;
+    }
+  }
+
+  .W_Form p.A_LabelLarge:first-child {
+    font-size: 20px;
+  }
+
+  .Q_LogoSvg {
+    width: 190px;
+  }
+
+  .W_InfoLineHor {
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 999;
+    gap: 48px;
   }
 
   .A_MenuItemMobile {

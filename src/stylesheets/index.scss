@@ -50,6 +50,16 @@ body {
   height: 405px;
 }
 
+.horisontal {
+  aspect-ratio: 16 / 9;
+  height: 405px;
+}
+
+.circle {
+  border-radius: 1000px;
+  height: 405px;
+}
+
 .BackBlur {
   position: absolute;
   left: -12px;

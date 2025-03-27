@@ -21,11 +21,22 @@
   color: var(--type-white);
 }
 
+.M_ItemCardBottomHeadingEvents {
+  grid-column-gap: 8px;
+  flex: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+  color: var(--type-white);
+}
+
 .M_WorkCard {
+  grid-column: span 2;
   grid-row-gap: 10px;
   background-color: #d9d9d9;
   background-image: linear-gradient(#0000 0%, #000 100%),
-    url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b964a9251a18b7367e_M_WorkCard.png");
+    url("../../images/tusovochka/pics01/01.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +50,43 @@
   text-decoration: none;
   display: flex;
   position: relative;
+
+  &.Ts2 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url("../../images/tusovochka/pics02/01.png");
+  }
+
+  &.Ts3 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url("../../images/tusovochka/pics03/01.png");
+  }
+
+  &.Ts4 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url("../../images/tusovochka/pics04/01.png");
+  }
+
+  &.Ts5 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url("../../images/tusovochka/pics05/01.png");
+  }
+
+  &.Ts6 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url("../../images/tusovochka/pics06/01.png");
+  }
+
+  &.Ts7 {
+    background-image: linear-gradient(#0000 0%, #000 100%),
+      url("../../images/tusovochka/pics07/01.png");
+  }
+
+  p {
+    font-size: 28px;
+    a:visited {
+      color: inherit;
+    }
+  }
 }
 
 .M_HeroItemCrads {
@@ -91,7 +139,7 @@
   text-decoration: none;
   display: flex;
   overflow: hidden;
-  background-color: var(--surface-black_6);
+  z-index: 1;
 }
 
 .M_ParagraphHeader {

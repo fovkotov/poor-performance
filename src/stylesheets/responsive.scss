@@ -3,6 +3,26 @@
     background-image: url("../images/articles/Q_FooterPic1920.png");
     max-width: none;
   }
+
+  .C_Profiles {
+    width: 345px;
+  }
+
+  .S_TusovochkaContent {
+    grid-column-start: 8;
+  }
+
+  .W_ProfileHeading {
+    h1 {
+      font-size: 72px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 860px) {
+  .W_InfoLineHor {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -13,8 +33,187 @@
     --p-A_LabelSmall-font-size: var(--p-font-size);
   }
 
+  body.tusovochka {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .C_Bento {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .C_BentoPics {
+    width: 100%;
+  }
+
+  .O_ColabCardInterview {
+    flex-direction: column;
+  }
+
+  #MobileHidden {
+    display: none;
+  }
+
+  .S_TusovochkaContent {
+    width: 100%;
+    max-width: none;
+    margin-top: 8px;
+    grid-column-start: 1;
+    grid-column-end: 25;
+    margin-right: 0;
+  }
+
+  .A_ArticleRecsCardArticleLinkBtn {
+    display: flex;
+  }
+  .C_Links {
+    display: none;
+  }
+
+  .C_Hero {
+    flex-direction: column;
+    height: auto;
+
+    .A_ArticleRecsCardArticleLinkBtn {
+      width: 100vw;
+      translate: 0px;
+      background-color: var(--green);
+    }
+  }
+
+  .C_Profiles {
+    width: 100%;
+    position: relative;
+    left: auto;
+    overflow-x: auto;
+  }
+
+  .C_WrapTest {
+    flex-direction: row;
+    height: 16vw;
+    min-height: 60px;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .W_Profile {
+    grid-row-gap: 48px;
+  }
+
+  .W_Hero {
+    .W_ProfileHeading {
+      grid-row-gap: 20px;
+
+      padding-left: 20px;
+      width: 100%;
+      max-width: none;
+
+      grid-column-start: 1;
+      grid-column-end: 10;
+
+      h1 {
+        font-size: 36px;
+        letter-spacing: -0.4px;
+      }
+    }
+  }
+
+  .W_TopWorks {
+    h2 {
+      font-size: 28px;
+      padding-left: 20px;
+      letter-spacing: -0.2px;
+    }
+    grid-row-gap: 24px;
+  }
+
+  .A_Profile {
+    height: 60px;
+    padding: 0;
+    width: 60px;
+    &:first-child {
+      margin-top: 0;
+      margin-left: 26px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-right: 26px;
+    }
+  }
+
+  .Q_MainVideo01 {
+    top: 97px;
+    object-fit: cover;
+    width: 274px;
+    height: 190px;
+    right: 0;
+  }
+
+  .W_HeadingHero {
+    display: none;
+  }
+
+  .W_DotsWrap {
+    display: none;
+  }
+
+  .M_HeroItem {
+    flex-direction: column-reverse;
+    padding: 24px 20px;
+  }
+
+  .M_HeroItemCrads {
+    .A_LabelMedium {
+      opacity: 0;
+    }
+    .S_IndexContent {
+      grid-row-gap: 12px;
+      h2 {
+        font-size: 28px;
+      }
+      h3 {
+        font-size: 12px;
+        font-weight: 100;
+      }
+
+      opacity: 1;
+    }
+
+    height: 356px;
+
+    &:hover {
+      .A_LabelMedium {
+        opacity: 0;
+      }
+    }
+  }
+
+  .M_HeroItemCrads:first-child .M_HeroItem .S_IndexContent h3 br {
+    display: none;
+  }
+
+  .C_Social {
+    display: none;
+  }
+
   p.Title {
     font-size: 14px;
+  }
+
+  .W_ArticleHeading {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .W_ArticleListItem {
+    p {
+      font-size: 14px;
+    }
   }
 
   .W_IventCardBottomContent {
@@ -44,12 +243,6 @@
     padding-bottom: 32px;
   }
 
-  .W_ArticleHeading {
-    justify-content: flex-start;
-    width: 100%;
-    gap: 12px;
-  }
-
   .O_ItemCardBottom {
     width: calc(100% - 16px);
   }
@@ -73,12 +266,6 @@
 
   .O_TextParagraph {
     grid-row-gap: 16px;
-  }
-
-  .W_ArticleListItem {
-    p {
-      font-size: 14px;
-    }
   }
 
   .A_ArticleCoverVideo {
@@ -291,12 +478,57 @@
     z-index: 999;
   }
 
+  .O_FooterMobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 128px;
+    padding-bottom: 96px;
+    gap: 12px;
+    background: linear-gradient(
+      0deg,
+      var(--Serface---surface-brand-primary, #b2ff00) 0%,
+      rgba(247, 248, 250, 0) 100%
+    );
+  }
+
+  .W_Form {
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    z-index: 999;
+  }
+
   .A_MenuButtonMobile.White {
     background-image: url("../images/Q_MenuBlack.svg");
   }
 
   .W_MenuList {
     max-width: 220px;
+  }
+
+  .A_TelegarmText {
+    p.A_LabelSmall {
+      font-size: 14px;
+    }
+    p.A_LabelSmall:first-child {
+      color: black;
+    }
+  }
+
+  .W_Form p.A_LabelLarge:first-child {
+    font-size: 20px;
+  }
+
+  .Q_LogoSvg {
+    width: 190px;
+  }
+
+  .W_InfoLineHor {
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 999;
+    gap: 48px;
   }
 
   .A_MenuItemMobile {

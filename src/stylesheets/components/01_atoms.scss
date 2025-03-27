@@ -43,9 +43,72 @@ h3 {
   overflow: auto;
 }
 
+.A_CardInterviewCover {
+  width: 100%;
+  max-width: 464px;
+  height: 100%;
+  object-fit: cover;
+
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.A_BentoCardHorisontal {
+  width: 100%;
+  object-fit: cover;
+}
+
 .A_Profile {
+  display: flex;
   aspect-ratio: 1;
   width: 100%;
+  padding: 6px 0px;
+  cursor: pointer;
+
+  &:first-child {
+    margin-top: 24px;
+  }
+
+  &:last-child {
+    margin-bottom: 424px;
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 345px;
+
+  &:hover {
+    box-shadow: 0px 0px 32.2px 0px #b2ff00 inset,
+      0px 0px 32.2px 0px #b2ff00 inset;
+  }
+
+  &:nth-child(1) {
+    background-image: url("../../images/tusovochka/A_Profile01.png");
+  }
+  &:nth-child(2) {
+    background-image: url("../../images/tusovochka/A_Profile02.png");
+  }
+  &:nth-child(3) {
+    background-image: url("../../images/tusovochka/A_Profile03.png");
+  }
+  &:nth-child(4) {
+    background-image: url("../../images/tusovochka/A_Profile04.png");
+  }
+  &:nth-child(5) {
+    background-image: url("../../images/tusovochka/A_Profile05.png");
+  }
+  &:nth-child(6) {
+    background-image: url("../../images/tusovochka/A_Profile06.png");
+  }
+  &:nth-child(7) {
+    background-image: url("../../images/tusovochka/A_Profile07.png");
+  }
+
+  &.active {
+    box-shadow: 0px 0px 32.2px 0px #b2ff00 inset,
+      0px 0px 32.2px 0px #b2ff00 inset;
+  }
 }
 
 .A_MenuItem {
@@ -74,6 +137,14 @@ h3 {
 
   &:focus {
     background-color: var(--surface-brand-primary);
+  }
+
+  &.Active {
+    background-color: var(--green);
+  }
+
+  p {
+    color: black;
   }
 }
 
@@ -391,7 +462,7 @@ h3 {
   translate: -20px;
   width: calc(100vw);
   background-color: #e2e3e4;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 38px;
@@ -432,4 +503,13 @@ h3 {
   align-items: center;
   width: 60px;
   text-align: center;
+}
+
+.A_Backgrad {
+  background: linear-gradient(180deg, rgba(112, 113, 114, 0) 0%, #707172 100%);
+  width: 200vw;
+  position: absolute;
+  z-index: 1;
+  height: 120px;
+  top: -56px;
 }

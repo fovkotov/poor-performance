@@ -29,17 +29,48 @@
   flex: 0 auto;
   justify-content: flex-start;
   align-items: center;
+  padding-bottom: 44px;
   text-decoration: none;
   display: flex;
 }
 
 .C_Profiles {
+  grid-column-gap: 10px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 23.958vw;
+  text-decoration: none;
   display: flex;
-  align-items: center;
-  align-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 12px;
+}
+
+.C_ProfilesEvents {
+  grid-column-gap: 10px;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 230px;
+  text-decoration: none;
+  display: flex;
+  top: 0;
+  left: 12px;
+}
+
+.C_WrapTest {
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
 }
 
 .C_Links {
@@ -56,12 +87,27 @@
 }
 
 .C_Bento {
-  grid-column-gap: 12px;
-  flex: 0 auto;
-  justify-content: flex-start;
-  align-items: center;
-  text-decoration: none;
-  display: flex;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.C_BentoPics {
+  display: grid;
+  gap: 12px;
+  grid-column: span 2;
+  grid-template-columns: repeat(2, 1fr);
+  img {
+    grid-column: span 1;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.W_ColabCardWorksopText {
+  .C_WadeWithUsGrid {
+    grid-row-gap: 12px;
+  }
 }
 
 .C_WadeWithUsGrid {
