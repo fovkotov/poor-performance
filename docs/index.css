@@ -480,6 +480,28 @@ body.tusovochka {
   }
 }
 
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+a {
+  color: inherit; /* Наследует цвет текста родителя */
+  text-decoration: none; /* Убирает подчеркивание */
+}
+
+a:visited {
+  color: var(--type-primary);
+}
+
+a:hover {
+  color: var(--type-primary);
+}
+
+a:active {
+  color: var(--type-primary);
+}
+
 h1 {
   font-family: 'PP Neue Montreal SemiBold';
   font-size: var(--h1-font-size);
@@ -966,6 +988,28 @@ body.tusovochka {
   .O_Footer {
     grid-column: 1 / 25;
   }
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+a {
+  color: inherit; /* Наследует цвет текста родителя */
+  text-decoration: none; /* Убирает подчеркивание */
+}
+
+a:visited {
+  color: var(--type-primary);
+}
+
+a:hover {
+  color: var(--type-primary);
+}
+
+a:active {
+  color: var(--type-primary);
 }
 
 .A_3dCard {
@@ -1461,6 +1505,15 @@ h3 {
   background-size: cover;
 }
 
+.A_TusovochkaCardCover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  background-size: cover;
+}
+
 .A_ProfileEvent {
   display: flex;
   padding: 6px;
@@ -1843,7 +1896,7 @@ h3 {
   grid-column-gap: 10px;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: 70%;
   padding-left: 60px;
   text-decoration: none;
   display: flex;
@@ -2560,7 +2613,7 @@ h3 {
   padding: 12px;
   text-decoration: none;
   display: flex;
-  position: relative;
+  position: relativO_ColabCardWorkshopYoue;
   flex-direction: column;
 }
 
@@ -2604,6 +2657,21 @@ h3 {
   display: flex;
   overflow: hidden;
   background-image: url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9a45d51194be8148f_O_ColabCardWorkshop.png");
+}
+
+.O_ColabCardWorkshopYou2046 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 464px;
+  text-decoration: none;
+  display: flex;
+  overflow: hidden;
+  background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/35553879/original_35aa58bee1bf3d5e936d7aa9946446d2.png?1743069801?bc=0);
 }
 
 .O_Footer {
