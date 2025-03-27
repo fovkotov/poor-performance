@@ -126,6 +126,277 @@ module.exports = {
       chunks: ["index"],
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/artem-interview.html",
+      filename: "./articles/artem-interview.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/fedenko.html",
+      filename: "./articles/fedenko.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/julia-interview.html",
+      filename: "./articles/julia-interview.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-1.html",
+      filename: "./articles/ns-1.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-2.html",
+      filename: "./articles/ns-2.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-3.html",
+      filename: "./articles/ns-3.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-4.html",
+      filename: "./articles/ns-4.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-5.html",
+      filename: "./articles/ns-5.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-6.html",
+      filename: "./articles/ns-6.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-7.html",
+      filename: "./articles/ns-7.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-8.html",
+      filename: "./articles/ns-8.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-9.html",
+      filename: "./articles/ns-9.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-10.html",
+      filename: "./articles/ns-10.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-11.html",
+      filename: "./articles/ns-11.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-12.html",
+      filename: "./articles/ns-12.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-13.html",
+      filename: "./articles/ns-13.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-14.html",
+      filename: "./articles/ns-14.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-15.html",
+      filename: "./articles/ns-15.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-16.html",
+      filename: "./articles/ns-16.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-17.html",
+      filename: "./articles/ns-17.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-18.html",
+      filename: "./articles/ns-18.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-19.html",
+      filename: "./articles/ns-19.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-20.html",
+      filename: "./articles/ns-20.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-21.html",
+      filename: "./articles/ns-21.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-22.html",
+      filename: "./articles/ns-22.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-23.html",
+      filename: "./articles/ns-23.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-24.html",
+      filename: "./articles/ns-24.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-25.html",
+      filename: "./articles/ns-25.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-26.html",
+      filename: "./articles/ns-26.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/ns-27.html",
+      filename: "./articles/ns-27.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/pp-redesign.html",
+      filename: "./articles/pp-redesign.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/replicate-new.html",
+      filename: "./articles/replicate-new.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/replicate.html",
+      filename: "./articles/replicate.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
+      template: "./src/articles/sd+td.html",
+      filename: "./articles/sd+td.html",
+      chunks: ["index"],
+    }),
     // new HtmlWebpackPlugin({
     //   template: './src/article.html',
     //   filename: './article.html',

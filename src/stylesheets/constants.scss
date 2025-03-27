@@ -160,3 +160,25 @@ body.tusovochka {
     grid-column: 1 / 25;
   }
 }
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+a {
+  color: inherit; /* Наследует цвет текста родителя */
+  text-decoration: none; /* Убирает подчеркивание */
+}
+
+a:visited {
+  color: var(--type-primary);
+}
+
+a:hover {
+  color: var(--type-primary);
+}
+
+a:active {
+  color: var(--type-primary);
+}
