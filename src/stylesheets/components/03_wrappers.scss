@@ -298,10 +298,9 @@
 
 .W_MediumLearningCardInfo {
   grid-column: span 8;
-  display: grid;
-
-  grid-template-rows: 1fr auto; /* Верхний элемент, пустое место, нижний элемент */
-  grid-template-columns: repeat(8, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -310,6 +309,7 @@
   gap: 16px;
   flex-direction: column;
   grid-column: span 8;
+  height: fit-content;
 }
 
 .W_SmallLearningCardInfo {
@@ -332,11 +332,15 @@
   -webkit-line-clamp: 6;
   position: relative;
   grid-column: span 6;
+
+  h1 {
+    font-size: 48px;
+  }
 }
 
 .W_SmallLearningCardRow {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(24, 1fr);
   gap: 12px;
   width: 100%;
   margin-bottom: 128px;

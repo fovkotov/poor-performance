@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
     burgerOpen.addEventListener("click", function () {
       nav.style.display = "flex";
       burgerOpen.style.display = "none";
-      document.body.style.overflow = "hidden"; // запретить скролл
+      document.body.style.overflow = "hidden";
     });
 
     burgerClose.addEventListener("click", function () {
       nav.style.display = "none";
       burgerOpen.style.display = "flex";
-      document.body.style.overflow = ""; // вернуть скролл
+      document.body.style.overflow = "";
     });
   }
 });

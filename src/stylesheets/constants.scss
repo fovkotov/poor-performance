@@ -149,6 +149,21 @@ body.article {
   position: relative;
 }
 
+body.ucheba {
+  position: relative;
+}
+
+body.trusi {
+  position: relative;
+  background-image: url("../images/trusi.JPG");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
 body.tusovochka {
   position: relative;
   display: grid;
@@ -159,6 +174,23 @@ body.tusovochka {
   .O_Footer {
     grid-column: 1 / 25;
   }
+}
+
+h1.ono a {
+  text-decoration: underline;
+}
+
+h1.ono a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.ahaha {
+  display: flex;
+}
+
+.hehe {
+  right: 8.056vw;
 }
 
 img {
@@ -181,4 +213,26 @@ a:hover {
 
 a:active {
   color: var(--type-primary);
+}
+
+.PareWrap {
+  gap: 14px;
+  display: flex;
+  p {
+    width: 226px;
+    flex-shrink: 0;
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  h1 {
+    width: 772px;
+    font-size: 48px;
+  }
+}
+.MainWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0px 12px;
+  margin-top: 24px;
 }

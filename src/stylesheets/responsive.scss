@@ -17,6 +17,14 @@
       font-size: 72px;
     }
   }
+
+  .C_WadeWithUsGrid {
+    &.uch {
+      h3 {
+        font-size: 48px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 860px) {
@@ -33,6 +41,48 @@
     --p-A_LabelSmall-font-size: var(--p-font-size);
   }
 
+  .S_MediumLearningCard {
+    grid-template-rows: repeat(18, 1fr);
+    height: fit-content;
+    margin-bottom: 0;
+  }
+
+  .W_MediumLearningCardInfo {
+    grid-row: span 8;
+    grid-column: 20;
+    grid-column-start: 1;
+    grid-column-end: 24;
+
+    h1.grid--6.A_Heading2 {
+      font-size: 28px;
+    }
+  }
+
+  .C_Tab {
+    bottom: 0;
+    top: auto;
+    position: fixed;
+    background-color: #f7f8fa;
+    mix-blend-mode: normal;
+    z-index: 9999;
+    height: 46px;
+    grid-column-gap: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0;
+
+    .Q_Link {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  .A_MediumLearningCardCover {
+    grid-column: span 24;
+    grid-row: span 8;
+  }
   body.tusovochka {
     display: flex;
     flex-direction: column;
@@ -43,6 +93,40 @@
     gap: 12px;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+  }
+
+  .W_MediumLearningCardInfoParagraph {
+    .A_Button {
+      width: calc(100vw - 20px);
+      translate: -20px;
+      top: 64px;
+    }
+
+    .A_FadeMediumLearningCardInfo {
+      background: none;
+    }
+
+    p.grid--6 {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .W_MediumLearningCardInfo {
+    h1.grid--6.A_Heading2 {
+      font-size: 16px;
+      font-weight: 100;
+    }
+  }
+
+  .W_SmallLearningCardRow {
+    display: none;
+  }
+
+  .S_UchebaGrid {
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .C_BentoPics {
@@ -174,10 +258,13 @@
       grid-row-gap: 12px;
       h2 {
         font-size: 28px;
+        letter-spacing: -0.4px;
       }
       h3 {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 100;
+        letter-spacing: 0px;
+        font-weight: 500;
       }
 
       opacity: 1;
@@ -208,6 +295,10 @@
     justify-content: flex-start;
     width: 100%;
     gap: 12px;
+  }
+
+  .O_TextParagraph {
+    grid-row-gap: 16px;
   }
 
   .W_ArticleListItem {
@@ -505,6 +596,21 @@
 
   .W_MenuList {
     max-width: 220px;
+  }
+
+  .PareWrap {
+    flex-direction: column;
+    gap: 6px;
+    h1 {
+      width: 100%;
+      font-size: 24px;
+      letter-spacing: -0.4px;
+    }
+
+    p {
+      width: 100%;
+      font-size: 12px;
+    }
   }
 
   .A_TelegarmText {

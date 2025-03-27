@@ -141,6 +141,7 @@ body {
 
 .default-tab {
   color: var(--type-white_48);
+  font-family: "PP Neue Montreal SemiBold";
 }
 
 .Crop {
@@ -468,6 +469,21 @@ body.article {
   position: relative;
 }
 
+body.ucheba {
+  position: relative;
+}
+
+body.trusi {
+  position: relative;
+  background-image: url(images/b928e609adacc5d15bc4.JPG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
 body.tusovochka {
   position: relative;
   display: grid;
@@ -478,6 +494,23 @@ body.tusovochka {
   .O_Footer {
     grid-column: 1 / 25;
   }
+}
+
+h1.ono a {
+  text-decoration: underline;
+}
+
+h1.ono a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.ahaha {
+  display: flex;
+}
+
+.hehe {
+  right: 8.056vw;
 }
 
 img {
@@ -500,6 +533,28 @@ a:hover {
 
 a:active {
   color: var(--type-primary);
+}
+
+.PareWrap {
+  gap: 14px;
+  display: flex;
+  p {
+    width: 226px;
+    flex-shrink: 0;
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  h1 {
+    width: 772px;
+    font-size: 48px;
+  }
+}
+.MainWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0px 12px;
+  margin-top: 24px;
 }
 
 h1 {
@@ -978,6 +1033,21 @@ body.article {
   position: relative;
 }
 
+body.ucheba {
+  position: relative;
+}
+
+body.trusi {
+  position: relative;
+  background-image: url(images/b928e609adacc5d15bc4.JPG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
 body.tusovochka {
   position: relative;
   display: grid;
@@ -988,6 +1058,23 @@ body.tusovochka {
   .O_Footer {
     grid-column: 1 / 25;
   }
+}
+
+h1.ono a {
+  text-decoration: underline;
+}
+
+h1.ono a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.ahaha {
+  display: flex;
+}
+
+.hehe {
+  right: 8.056vw;
 }
 
 img {
@@ -1010,6 +1097,28 @@ a:hover {
 
 a:active {
   color: var(--type-primary);
+}
+
+.PareWrap {
+  gap: 14px;
+  display: flex;
+  p {
+    width: 226px;
+    flex-shrink: 0;
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  h1 {
+    width: 772px;
+    font-size: 48px;
+  }
+}
+.MainWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0px 12px;
+  margin-top: 24px;
 }
 
 .A_3dCard {
@@ -1256,6 +1365,7 @@ h3 {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  min-width: 10px;
 }
 
 .A_FadeMediumLearningCardInfo {
@@ -1267,7 +1377,13 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  pointer-events: none;
+
+  z-index: 2;
+  cursor: pointer;
+
+  .A_Button {
+    border: none;
+  }
 }
 
 .A_Fade {
@@ -2043,10 +2159,9 @@ h3 {
 
 .W_MediumLearningCardInfo {
   grid-column: span 8;
-  display: grid;
-
-  grid-template-rows: 1fr auto; /* Верхний элемент, пустое место, нижний элемент */
-  grid-template-columns: repeat(8, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -2055,6 +2170,7 @@ h3 {
   gap: 16px;
   flex-direction: column;
   grid-column: span 8;
+  height: fit-content;
 }
 
 .W_SmallLearningCardInfo {
@@ -2077,11 +2193,15 @@ h3 {
   -webkit-line-clamp: 6;
   position: relative;
   grid-column: span 6;
+
+  h1 {
+    font-size: 48px;
+  }
 }
 
 .W_SmallLearningCardRow {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(24, 1fr);
   gap: 12px;
   width: 100%;
   margin-bottom: 128px;
@@ -2482,13 +2602,14 @@ h3 {
   mix-blend-mode: difference;
   flex: 0 auto;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   padding: 2px 32px;
   text-decoration: none;
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
+  height: 72px;
 }
 
 .C_Hero {
@@ -2787,7 +2908,7 @@ h3 {
 .S_UchebaGrid {
   display: grid;
   grid-auto-rows: auto;
-  padding: 36px 12px 12px 12px;
+  padding: 78px 12px 12px 12px;
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
@@ -2795,6 +2916,11 @@ h3 {
   align-self: stretch;
   flex-wrap: wrap;
 }
+
+.S_UchebaGrid .W_SmallLearningCardRow .W_BentoStart {
+  grid-column: span 8;
+}
+
 .S_MediumLearningCard {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
@@ -2884,6 +3010,14 @@ h3 {
       font-size: 72px;
     }
   }
+
+  .C_WadeWithUsGrid {
+    &.uch {
+      h3 {
+        font-size: 48px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 860px) {
@@ -2900,6 +3034,48 @@ h3 {
     --p-A_LabelSmall-font-size: var(--p-font-size);
   }
 
+  .S_MediumLearningCard {
+    grid-template-rows: repeat(18, 1fr);
+    height: fit-content;
+    margin-bottom: 0;
+  }
+
+  .W_MediumLearningCardInfo {
+    grid-row: span 8;
+    grid-column: 20;
+    grid-column-start: 1;
+    grid-column-end: 24;
+
+    h1.grid--6.A_Heading2 {
+      font-size: 28px;
+    }
+  }
+
+  .C_Tab {
+    bottom: 0;
+    top: auto;
+    position: fixed;
+    background-color: #f7f8fa;
+    mix-blend-mode: normal;
+    z-index: 9999;
+    height: 46px;
+    grid-column-gap: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0;
+
+    .Q_Link {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  .A_MediumLearningCardCover {
+    grid-column: span 24;
+    grid-row: span 8;
+  }
   body.tusovochka {
     display: flex;
     flex-direction: column;
@@ -2910,6 +3086,40 @@ h3 {
     gap: 12px;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+  }
+
+  .W_MediumLearningCardInfoParagraph {
+    .A_Button {
+      width: calc(100vw - 20px);
+      translate: -20px;
+      top: 64px;
+    }
+
+    .A_FadeMediumLearningCardInfo {
+      background: none;
+    }
+
+    p.grid--6 {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .W_MediumLearningCardInfo {
+    h1.grid--6.A_Heading2 {
+      font-size: 16px;
+      font-weight: 100;
+    }
+  }
+
+  .W_SmallLearningCardRow {
+    display: none;
+  }
+
+  .S_UchebaGrid {
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .C_BentoPics {
@@ -3041,10 +3251,13 @@ h3 {
       grid-row-gap: 12px;
       h2 {
         font-size: 28px;
+        letter-spacing: -0.4px;
       }
       h3 {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 100;
+        letter-spacing: 0px;
+        font-weight: 500;
       }
 
       opacity: 1;
@@ -3075,6 +3288,10 @@ h3 {
     justify-content: flex-start;
     width: 100%;
     gap: 12px;
+  }
+
+  .O_TextParagraph {
+    grid-row-gap: 16px;
   }
 
   .W_ArticleListItem {
@@ -3372,6 +3589,21 @@ h3 {
 
   .W_MenuList {
     max-width: 220px;
+  }
+
+  .PareWrap {
+    flex-direction: column;
+    gap: 6px;
+    h1 {
+      width: 100%;
+      font-size: 24px;
+      letter-spacing: -0.4px;
+    }
+
+    p {
+      width: 100%;
+      font-size: 12px;
+    }
   }
 
   .A_TelegarmText {

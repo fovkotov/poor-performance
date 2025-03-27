@@ -166,13 +166,14 @@
   mix-blend-mode: difference;
   flex: 0 auto;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   padding: 2px 32px;
   text-decoration: none;
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
+  height: 72px;
 }
 
 .C_Hero {

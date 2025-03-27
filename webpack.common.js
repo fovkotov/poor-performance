@@ -86,6 +86,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: "blocking",
+      template: "./src/trusi.html",
+      filename: "./trusi.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: "blocking",
       template: "./src/ucheba.html",
       filename: "./ucheba.html",
     }),
