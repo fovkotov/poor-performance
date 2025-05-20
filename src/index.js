@@ -4,3 +4,10 @@ import './javascript/clock.js'
 import './javascript/horizontal-scroll.js'
 import './javascript/burger-menu.js'
 import './javascript/tusovochka.js'
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Search from './javascript/Search.jsx'
+
+const root = ReactDOM.createRoot(document.getElementById('react-search-root'));
+root.render(<Search />);

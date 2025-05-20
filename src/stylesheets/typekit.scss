@@ -62,6 +62,16 @@ p.A_Heading3Burger {
   text-transform: lowercase;
 }
 
+input.A_Heading3Burger{
+  font-family: 'PP Neue Montreal Medium';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%; /* 23.8px */
+  letter-spacing: -0.28px;
+  text-transform: lowercase;
+}
+
 .A_LabelLarge {
   font-family: 'PP Neue Montreal Medium';
   font-size: var(--p-font-size);

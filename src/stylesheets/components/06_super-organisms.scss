@@ -43,7 +43,7 @@
 .S_UchebaGrid {
   display: grid;
   grid-auto-rows: auto;
-  padding: 78px 12px 12px 12px;
+  padding: 0 12px 12px 12px;
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
@@ -53,6 +53,7 @@
 }
 
 .S_UchebaGrid .W_SmallLearningCardRow .W_BentoStart {
+  display: grid;
   grid-column: span 8;
 }
 
