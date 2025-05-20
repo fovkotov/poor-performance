@@ -144,6 +144,13 @@ body {
   font-family: "PP Neue Montreal SemiBold";
 }
 
+#react-search-root{
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 12px
+}
+
+
 .Crop {
   display: -webkit-box;
   -webkit-line-clamp: 6; /* Обрезает на 6 строке */
@@ -299,21 +306,21 @@ body {
 
 @font-face {
   font-family: 'PP Neue Montreal Medium';
-  src: url(fonts/061e00cdc9ebd57b06f7.woff) format('woff');
+  src: url(/fonts/061e00cdc9ebd57b06f7.woff) format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PP Neue Montreal SemiBold';
-  src: url(fonts/e9a411f43c390e451b12.woff) format('woff');
+  src: url(/fonts/e9a411f43c390e451b12.woff) format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PP Neue Montreal Bold';
-  src: url(fonts/ed3bcafc151441ea6ced.woff2) format('woff2');
+  src: url(/fonts/ed3bcafc151441ea6ced.woff2) format('woff2');
   font-weight: 700;
   font-style: normal;
 }
@@ -475,7 +482,7 @@ body.ucheba {
 
 body.trusi {
   position: relative;
-  background-image: url(images/b928e609adacc5d15bc4.JPG);
+  background-image: url(/images/b928e609adacc5d15bc4.JPG);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -621,6 +628,17 @@ p.A_Heading3Burger {
   text-transform: lowercase;
 }
 
+input.A_Heading3Burger{
+  font-family: 'PP Neue Montreal Medium';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%; /* 23.8px */
+  letter-spacing: -0.28px;
+  text-transform: lowercase;
+}
+
+
 .A_LabelLarge {
   font-family: 'PP Neue Montreal Medium';
   font-size: var(--p-font-size);
@@ -749,19 +767,19 @@ p.A_Capture {
   height: 24px;
 
   &:nth-child(1) {
-    background-image: url(images/5ca0e4126b5e1d330a8d.svg);
+    background-image: url(/images/5ca0e4126b5e1d330a8d.svg);
   }
 
   &:nth-child(2) {
-    background-image: url(images/4ce4361d6278141afe0d.svg);
+    background-image: url(/images/4ce4361d6278141afe0d.svg);
   }
 
   &:nth-child(3) {
-    background-image: url(images/741c11f5b3ba3950ffce.svg);
+    background-image: url(/images/741c11f5b3ba3950ffce.svg);
   }
 
   &:nth-child(4) {
-    background-image: url(images/24362671ceb8b99d0290.svg);
+    background-image: url(/images/24362671ceb8b99d0290.svg);
   }
 }
 
@@ -805,7 +823,7 @@ p.A_Capture {
   transform: translate(-50%);
   bottom: 0;
 
-  background-image: url(images/536221989790dc3ef68d.png);
+  background-image: url(/images/536221989790dc3ef68d.png);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -882,6 +900,12 @@ p.A_Capture {
   z-index: 2;
 }
 
+
+.Q_SearchIcon{
+  background: url(/images/94d3f1c96826208c396f.svg) no-repeat center/100%;
+  width: 24px;
+  height: 27px;
+}
 :root {
   --background: #f7f8fa;
   --yellow: #ffff00;
@@ -1039,7 +1063,7 @@ body.ucheba {
 
 body.trusi {
   position: relative;
-  background-image: url(images/b928e609adacc5d15bc4.JPG);
+  background-image: url(/images/b928e609adacc5d15bc4.JPG);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1205,25 +1229,25 @@ h3 {
   }
 
   &:nth-child(1) {
-    background-image: url(images/b44527c0e712b45bd849.png);
+    background-image: url(/images/b44527c0e712b45bd849.png);
   }
   &:nth-child(2) {
-    background-image: url(images/9f5575a9736c29b1a070.png);
+    background-image: url(/images/9f5575a9736c29b1a070.png);
   }
   &:nth-child(3) {
-    background-image: url(images/2d8931d39ff927aa3bdc.png);
+    background-image: url(/images/2d8931d39ff927aa3bdc.png);
   }
   &:nth-child(4) {
-    background-image: url(images/94fc4a488eebd067f209.png);
+    background-image: url(/images/94fc4a488eebd067f209.png);
   }
   &:nth-child(5) {
-    background-image: url(images/f65a87de768b83daaeec.png);
+    background-image: url(/images/f65a87de768b83daaeec.png);
   }
   &:nth-child(6) {
-    background-image: url(images/a2bb3e7c529f9b4e7bd8.png);
+    background-image: url(/images/a2bb3e7c529f9b4e7bd8.png);
   }
   &:nth-child(7) {
-    background-image: url(images/d02707af0dc26587fa2a.png);
+    background-image: url(/images/d02707af0dc26587fa2a.png);
   }
 
   &.active {
@@ -1496,7 +1520,7 @@ h3 {
   width: 104px;
   aspect-ratio: 1 / 1;
 
-  background-image: url(images/d84b5264b03f96c9e539.png);
+  background-image: url(/images/d84b5264b03f96c9e539.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1651,6 +1675,23 @@ h3 {
   top: -56px;
 }
 
+
+.A_SearchInput{
+  background: transparent;
+  border: 0;
+  color: var(--white_48);
+  outline: 0;
+  transition: color .2s;
+  width: 100%;
+}
+
+.A_SearchInput::placeholder{
+  color: var(--white_48);
+}
+
+.A_SearchInput:focus{
+  color: var(--white);
+}
 .M_TimeAndTime {
   grid-row-gap: 6px;
   flex-direction: column;
@@ -1690,7 +1731,7 @@ h3 {
   grid-row-gap: 10px;
   background-color: #d9d9d9;
   background-image: linear-gradient(#0000 0%, #000 100%),
-    url(images/ab23ecba0e3700f29c81.png);
+    url(/images/ab23ecba0e3700f29c81.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1707,32 +1748,32 @@ h3 {
 
   &.Ts2 {
     background-image: linear-gradient(#0000 0%, #000 100%),
-      url(images/66538b3f20438ac51c5c.png);
+      url(/images/66538b3f20438ac51c5c.png);
   }
 
   &.Ts3 {
     background-image: linear-gradient(#0000 0%, #000 100%),
-      url(images/4c5055523c3d3e75c752.png);
+      url(/images/4c5055523c3d3e75c752.png);
   }
 
   &.Ts4 {
     background-image: linear-gradient(#0000 0%, #000 100%),
-      url(images/0b6c7b6468caddb783d9.png);
+      url(/images/0b6c7b6468caddb783d9.png);
   }
 
   &.Ts5 {
     background-image: linear-gradient(#0000 0%, #000 100%),
-      url(images/66eeb5864b0f046a8339.png);
+      url(/images/66eeb5864b0f046a8339.png);
   }
 
   &.Ts6 {
     background-image: linear-gradient(#0000 0%, #000 100%),
-      url(images/4ae1849f628120f5825c.png);
+      url(/images/4ae1849f628120f5825c.png);
   }
 
   &.Ts7 {
     background-image: linear-gradient(#0000 0%, #000 100%),
-      url(images/d6980c4ab5965c054e37.png);
+      url(/images/d6980c4ab5965c054e37.png);
   }
 
   p {
@@ -2434,6 +2475,31 @@ h3 {
   color: var(--type-white);
 }
 
+
+.W_SearchContainer{
+  background: rgba(203, 203, 204, 0.48);
+  padding: 8px;
+  display: flex;
+  gap: 10px;
+  transition: background .2s;
+  align-items: center;
+  backdrop-filter: blur(80px);
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  margin-top: 78px;
+}
+
+.W_SearchContainer:hover{
+  background: rgba(135, 135, 135, 0.48);
+}
+
+.W_SmallCard{
+  display: flex;
+  grid-column: span 12;
+  gap: 12px;
+  margin-bottom: 128px;
+}
 .C_TimeInfo {
   gap: 14px;
   justify-content: space-between;
@@ -2908,7 +2974,7 @@ h3 {
 .S_UchebaGrid {
   display: grid;
   grid-auto-rows: auto;
-  padding: 78px 12px 12px 12px;
+  padding: 0 12px 12px 12px;
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
@@ -2918,6 +2984,7 @@ h3 {
 }
 
 .S_UchebaGrid .W_SmallLearningCardRow .W_BentoStart {
+  display: grid;
   grid-column: span 8;
 }
 
@@ -2993,7 +3060,7 @@ h3 {
 
 @media only screen and (min-width: 1441px) {
   .Q_FooterPic {
-    background-image: url(images/2c88a524f7f2c2415860.png);
+    background-image: url(/images/2c88a524f7f2c2415860.png);
     max-width: none;
   }
 
@@ -3529,7 +3596,7 @@ h3 {
       -webkit-backdrop-filter: none;
       backdrop-filter: none;
 
-      background-image: url(images/d624da3bd5dbf4532212.svg);
+      background-image: url(/images/d624da3bd5dbf4532212.svg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -3551,7 +3618,7 @@ h3 {
     height: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
-    background-image: url(images/46a4ec45d1a6de83df25.svg);
+    background-image: url(/images/46a4ec45d1a6de83df25.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -3584,7 +3651,7 @@ h3 {
   }
 
   .A_MenuButtonMobile.White {
-    background-image: url(images/1d8bd8a2ffef7be37c9f.svg);
+    background-image: url(/images/1d8bd8a2ffef7be37c9f.svg);
   }
 
   .W_MenuList {

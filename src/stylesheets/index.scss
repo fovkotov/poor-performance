@@ -19,6 +19,13 @@ body {
   font-family: "PP Neue Montreal SemiBold";
 }
 
+#react-search-root{
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 12px
+}
+
+
 .Crop {
   display: -webkit-box;
   -webkit-line-clamp: 6; /* Обрезает на 6 строке */

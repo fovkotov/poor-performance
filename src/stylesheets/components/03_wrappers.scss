@@ -572,3 +572,29 @@
   gap: 12px;
   color: var(--type-white);
 }
+
+
+.W_SearchContainer{
+  background: rgba(203, 203, 204, 0.48);
+  padding: 8px;
+  display: flex;
+  gap: 10px;
+  transition: background .2s;
+  align-items: center;
+  backdrop-filter: blur(80px);
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  margin-top: 78px;
+}
+
+.W_SearchContainer:hover{
+  background: rgba(135, 135, 135, 0.48);
+}
+
+.W_SmallCard{
+  display: flex;
+  grid-column: span 12;
+  gap: 12px;
+  margin-bottom: 128px;
+}

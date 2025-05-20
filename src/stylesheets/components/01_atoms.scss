@@ -529,3 +529,21 @@ h3 {
   height: 120px;
   top: -56px;
 }
+
+
+.A_SearchInput{
+  background: transparent;
+  border: 0;
+  color: var(--white_48);
+  outline: 0;
+  transition: color .2s;
+  width: 100%;
+}
+
+.A_SearchInput::placeholder{
+  color: var(--white_48);
+}
+
+.A_SearchInput:focus{
+  color: var(--white);
+}
