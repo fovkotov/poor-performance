@@ -19,6 +19,75 @@
 
     <!-- Primary Meta Tags -->
     <title>poor performance</title>
+    <style>
+      /* Простейшие стили для статьи */
+      body {
+        /* max-width: 800px; */
+        margin: 6rem;
+        background-color: #ffffff;
+        color: #000000;
+        display: flex;
+        flex-direction: column;
+
+      }
+      .content{
+        width: 900px;
+        margin: auto;
+        margin-top: 240px;
+      }
+      h4 {
+        font-family: 'PP Neue Montreal SemiBold';
+        font-size: var(--h2-font-size);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%;
+        letter-spacing: -0.96px;
+        text-transform: lowercase;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem 0;
+      }
+
+      .section {
+        margin-bottom: 3rem;
+      }
+
+      .title {
+        margin-bottom: 1rem;
+      }
+
+      .grid, .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .grid img, .row img {
+        flex: 1 1 48%;
+      }
+
+      .aspect-1-1, .aspect-16-9 {
+        aspect-ratio: auto;
+      }
+
+      .paragraph {
+        margin-bottom: 1rem;
+      }
+      .title-difference{
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+
+      }
+    </style>
     <meta name="title" content="poor performance" />
     <meta name="description" content="media about ai tools for creators" />
 
@@ -45,6 +114,7 @@
     <meta property="twitter:player:width" content="1280" />
     <meta property="twitter:player:height" content="720" />
 
+
     <link
       rel="icon"
       type="image/png"
@@ -59,55 +129,131 @@
       href="/src/images/apple-touch-icon.png"
     />
     <link rel="manifest" href="/src/images/site.webmanifest" />
+    <script defer="defer" src="index.js"></script>
   </head>
   <body class="body">
-    <div class="dots difference">
-      <img
-        src="images/dot.svg"
-        width="6"
-        height="6"
-        alt=""
-        class="vectors-wrapper"
-      />
-      <img
-        src="images/dot.svg"
-        width="6"
-        height="6"
-        alt=""
-        class="vectors-wrapper"
-      />
-      <img
-        src="images/dot.svg"
-        width="6"
-        height="6"
-        alt=""
-        class="vectors-wrapper"
-      />
+    <div class="W_NavigationTop">
+      <img src="./images/articles/Q_Logo.svg" alt="" class="Q_LogoSvg" />
+      <div class="W_MenuNav">
+        <div class="C_Navigation">
+          <a href="../index.html" class="A_MenuItem ">
+            <p class="A_LabelSmall" id="main-item-tab">Главная</p>
+          </a>
+          <a href="../ivents.html" class="A_MenuItem Active">
+            <p class="A_LabelSmall" id="ivent-item-tab">Ивенты</p>
+          </a>
+          <a href="../tusovochka.html" class="A_MenuItem">
+            <p class="A_LabelSmall" id="tusovochka-item-tab">Тусовочка</p>
+          </a>
+          <a href="../ucheba.html" class="A_MenuItem">
+            <p class="A_LabelSmall" id="ucheba-item-tab">Учеба</p>
+          </a>
+          <a href="../about.html" class="A_MenuItem">
+            <p class="A_LabelSmall" id="about-item-tab">О нас</p>
+          </a>
+        </div>
+        <a href="trusi.html" div class="A_3dCard">
+          <img src="./images/articles/Q_Trusi.png" loading="lazy" alt="" />
+        </a v>
+      </div>
     </div>
-    <div class="dots difference bottom">
-      <img
-        src="images/dot.svg"
-        width="6"
-        height="6"
-        alt=""
-        class="vectors-wrapper"
-      />
-      <img
-        src="images/dot.svg"
-        width="6"
-        height="6"
-        alt=""
-        class="vectors-wrapper"
-      />
-      <img
-        src="images/dot.svg"
-        width="6"
-        height="6"
-        alt=""
-        class="vectors-wrapper"
-      />
+    <div class="A_MenuButtonMobile White" id="BurgerOpen"></div>
+    <div class="W_NavigationTopMobile">
+      <div class="A_MenuButtonMobile" id="BurgerClose"></div>
+      <div id="menu-list" class="W_MenuList">
+        <div class="C_NavigationMobile">
+          <a href="index.html" class="A_MenuItemMobile">
+            <p class="A_Heading3Burger">Главная</p>
+          </a>
+          <a href="ivents.html" class="A_MenuItemMobile">
+            <p class="A_Heading3Burger">Ивенты</p>
+          </a>
+          <a href="tusovochka.html" class="A_MenuItemMobile">
+            <p class="A_Heading3Burger">Тусовочка</p>
+          </a>
+          <a href="ucheba.html" class="A_MenuItemMobile">
+            <p class="A_Heading3Burger">Учеба</p>
+          </a>
+          <a href="about.html" class="A_MenuItemMobile">
+            <p class="A_Heading3Burger">О нас</p>
+          </a>
+        </div>
+        <a href="trusi.html" class="A_3DCardMobile">
+          <img
+            src="./images/articles/Q_Trusi.png"
+            loading="lazy"
+            width="100"
+            height="79.8671875"
+            alt=""
+            class="Q_X"
+          />
+          <p class="A_Heading3Burger">надеть трусы $</p>
+        </a>
+        <div class="C_SocialIconsMobile">
+          <div class="LinkSocial">
+            <a class="IconsSocial" href="https://t.me/poorperformance">
+              <img
+                src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c526f3b63521d32f9b7b_Vector.svg"
+                loading="lazy"
+                width="29.249889373779297"
+                height="25.74188804626465"
+                alt=""
+                class="Q_X"
+              />
+            </a>
+          </div>
+          <div class="LinkSocial">
+            <a
+              class="IconsSocial2"
+              href="https://www.instagram.com/poorperformance_media?igsh=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c526dae7fc8b99c795f8_Union.svg"
+                loading="lazy"
+                width="27.287891387939453"
+                height="26.907569885253906"
+                alt=""
+                class="Union"
+              />
+            </a>
+          </div>
+          <div class="LinkSocial">
+            <a
+              class="IconsSocial3"
+              href="https://www.are.na/poor-performance/channels"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c5268e2c7068026828ab_Vector.svg"
+                loading="lazy"
+                width="36.24760055541992"
+                height="20.30481719970703"
+                alt=""
+                class="Q_X"
+              />
+            </a>
+          </div>
+          <div class="LinkSocial">
+            <a
+              class="IconsSocial4"
+              href="https://youtube.com/@poorperformancehere?si=SsI7JHe6TS-5zbz7"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c526c436a699b9e8d9db_Vector.svg"
+                loading="lazy"
+                width="32.552669525146484"
+                height="24.259334564208984"
+                alt=""
+                class="Q_X"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="styleguide-menu">
+    <!-- <div class="styleguide-menu">
       <div class="styleguide-row">
         <div class="menu-item">
           <p class="label-small black">Principles</p>
@@ -139,8 +285,8 @@
           <p class="label-small black">Tone of Voice</p>
         </div>
       </div>
-    </div>
-    <div class="burger-menu">
+    </div> -->
+    <!-- <div class="burger-menu">
       <div class="burger-menu-item">
         <p class="label-small black">Menu</p>
       </div>
@@ -154,11 +300,19 @@
         <source src="images/2output.webm" type="video/webm" />
       </video>
       <h2 class="difference">style-<br />guide</h2>
-    </div>
+    </div> -->
     <div class="content">
       <div class="section">
-        <div class="title difference">
-          <h4 id="Principles">Principles</h4>
+        <div class="title-difference">
+          <h4 class="A_Heading1" style="
+        font-family: 'PP Neue Montreal SemiBold';
+        font-size: var(--h2-font-size);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%;
+        letter-spacing: -0.96px;
+        text-transform: lowercase;
+      " >Principles</h4>
           <div class="paragraph">
             <p class="label-medium">
               Принцип в контрасте: поиска и находки, программирования и креатива
@@ -191,8 +345,16 @@
         </div>
       </div>
       <div class="section">
-        <div class="title difference">
-          <h4 id="logo">Logo</h4>
+        <div class="title-difference">
+          <h4 style="
+        font-family: 'PP Neue Montreal SemiBold';
+        font-size: var(--h2-font-size);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%;
+        letter-spacing: -0.96px;
+        text-transform: lowercase;
+      " id="logo">Logo</h4>
           <div class="paragraph">
             <p class="label-medium">
               Наш логотип созвучен  с метафорой процесса генерации, поэтому
@@ -227,8 +389,16 @@
         </div>
       </div>
       <div class="section">
-        <div class="title difference">
-          <h4 id="colors">Colors</h4>
+        <div class="title-difference">
+          <h4 style="
+        font-family: 'PP Neue Montreal SemiBold';
+        font-size: var(--h2-font-size);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%;
+        letter-spacing: -0.96px;
+        text-transform: lowercase;
+      " id="colors">Colors</h4>
           <div class="paragraph">
             <p class="label-medium">
               Цвета так же неожиданны как вау-результат, случайно полученный во
@@ -252,8 +422,16 @@
         </div>
       </div>
       <div class="section">
-        <div class="title difference">
-          <h4 id="Typography">Typography</h4>
+        <div class="title-difference">
+          <h4 style="
+        font-family: 'PP Neue Montreal SemiBold';
+        font-size: var(--h2-font-size);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%;
+        letter-spacing: -0.96px;
+        text-transform: lowercase;
+      " id="Typography">Typography</h4>
           <div class="paragraph">
             <p class="label-medium">
               Заголовки всегда начинаются со строчной буквы, а подзаголовки с
@@ -279,8 +457,16 @@
         </div>
       </div>
       <div class="section">
-        <div class="title difference">
-          <h4 id="Typography">Motion</h4>
+        <div class="title-difference">
+          <h4 style="
+        font-family: 'PP Neue Montreal SemiBold';
+        font-size: var(--h2-font-size);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%;
+        letter-spacing: -0.96px;
+        text-transform: lowercase;
+      " id="Typography">Motion</h4>
           <div class="paragraph">
             <p class="label-medium">
               VFX маска вращается вокруг своей оси на 360° Внутрь маски
@@ -313,8 +499,16 @@
         </div>
       </div>
       <div class="section">
-        <div class="title difference">
-          <h4 id="Typography">illustration</h4>
+        <div class="title-difference">
+          <h4 style="
+        font-family: 'PP Neue Montreal SemiBold';
+        font-size: var(--h2-font-size);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%;
+        letter-spacing: -0.96px;
+        text-transform: lowercase;
+      " id="Typography">illustration</h4>
           <div class="paragraph">
             <p class="label-medium">
               Маски символизирующие неожиданный вау-результат генераций
@@ -345,8 +539,16 @@
         </div>
       </div>
       <div class="section">
-        <div class="title difference">
-          <h4 id="Typography">layout</h4>
+        <div class="title-difference">
+          <h4 style="
+        font-family: 'PP Neue Montreal SemiBold';
+        font-size: var(--h2-font-size);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%;
+        letter-spacing: -0.96px;
+        text-transform: lowercase;
+      " id="Typography">layout</h4>
           <div class="paragraph">
             <p class="label-medium">
               24 колонки 12px margin Силовые линии с интервалом x1.61
@@ -363,8 +565,16 @@
         </div>
       </div>
       <div class="section">
-        <div class="title difference">
-          <h4 id="Typography">Photography</h4>
+        <div class="title-difference">
+          <h4 style="
+        font-family: 'PP Neue Montreal SemiBold';
+        font-size: var(--h2-font-size);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%;
+        letter-spacing: -0.96px;
+        text-transform: lowercase;
+      " id="Typography">Photography</h4>
           <div class="paragraph">
             <p class="label-medium">
               Фотография может быть вставлена в моушн, либо в маску с фирменной
@@ -396,8 +606,16 @@
         </div>
       </div>
       <div class="section">
-        <div class="title difference">
-          <h4 id="Typography">ton of voice</h4>
+        <div class="title-difference">
+          <h4 style="
+        font-family: 'PP Neue Montreal SemiBold';
+        font-size: var(--h2-font-size);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%;
+        letter-spacing: -0.96px;
+        text-transform: lowercase;
+      " id="Typography">ton of voice</h4>
           <div class="paragraph">
             <p class="label-medium">
               Мы успешный молодой стартапер, который курит бонг, сидя на диване
